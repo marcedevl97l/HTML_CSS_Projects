@@ -1,0 +1,73 @@
+body {
+    font-family: monospace;
+}
+/*configuracion para los iconos de google*/
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+.search-bar {
+    border: solid 1px #ccc;
+    border-radius: 25px;
+    /*responsive lo ordena de izquiera a derecha*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*relleno en los bordes*/
+    padding: 5px 10px;
+    /*margen para las esquinas*/
+    margin: 100px auto;
+  }
+
+/*para que la barra de direccion parpadee*/
+.search-bar:focus-within {
+    border: solid 1px black;
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 2px 5px rgba(26, 22, 65, 0.2);
+}
+
+.search-bar input {
+    border: none;
+    /* para desaparecer el cuadro del input y abarque todo su div */
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+    /* rellena los espacios vacios */
+    flex: auto;
+}
+.search-bar .actions{
+    display: flex;
+    /* para agregar margenes entre los botones */
+    gap: 8px;
+}
+.search-bar .actions button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    color: #999;
+}
+.search-bar .actions button:hover {
+    color: black;
+}
